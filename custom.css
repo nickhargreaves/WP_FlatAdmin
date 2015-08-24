@@ -4,3 +4,7 @@
 #wpcontent{
     background-color: #fff;
 }
+.btn{
+    margin: 5px;
+    min-height: 30px;
+}
