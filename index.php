@@ -29,9 +29,19 @@ function wpse_60168_custom_menu_class()
         if(startsWith(($value[4]), "menu-top"))
             $menu[$key][4] .= " btn btn-block btn-lg btn-primary";
     }
+
 }
 
 function startsWith($haystack, $needle) {
     // search backwards starting from haystack length characters from the end
     return $needle === "" || strrpos($haystack, $needle, -strlen($haystack)) !== FALSE;
 }
+
+add_filter( 'postbox', function ( $classes ) {
+
+    // $classes is an array; add your custom classes to the array
+    print 'my-class';
+
+    return $classes;
+
+} );

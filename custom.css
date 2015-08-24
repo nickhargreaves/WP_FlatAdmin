@@ -8,3 +8,13 @@
     margin: 5px;
     min-height: 30px;
 }
+.button-primary{
+    .btn-primary;
+}
+.postbox{
+    position: relative;
+    padding: 14px;
+    margin-bottom: 20px;
+    background-color: #eff0f2;
+    border-radius: 6px;
+}
