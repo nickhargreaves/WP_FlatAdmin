@@ -1,2 +1,2 @@
-# FlatUI_WP_Admin
-This plugin turns a Wordpress admin page into a mordern looking dashboard based on the Flat UI kit by http://designmodo.com/flat
+# FlatUI WordPress Admin
+This plugin turns a normal Wordpress admin into a mordern looking dashboard based on the Flat UI kit by Design Modo http://designmodo.com/flat
