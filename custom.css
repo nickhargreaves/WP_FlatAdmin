@@ -1,5 +1,6 @@
 #adminmenu, #adminmenu .wp-submenu, #adminmenuback, #adminmenuwrap {
     background-color: #fff !important;
+    width: 250px;
 }
 #wpcontent{
     background-color: #fff;
@@ -17,4 +18,7 @@
     margin-bottom: 20px;
     background-color: #eff0f2;
     border-radius: 6px;
+}
+#wpcontent, #wpfooter {
+    margin-left: 250px;
 }
