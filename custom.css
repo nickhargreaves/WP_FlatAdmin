@@ -79,3 +79,9 @@
 #adminmenu div.wp-menu-image {
     margin: 10px;
 }
+#adminmenu .wp-submenu, .folded #adminmenu .wp-has-current-submenu .wp-submenu, .folded #adminmenu a.wp-has-current-submenu:focus+.wp-submenu {
+    padding: 0px;
+}
+#collapse-button {
+    margin: 5px 22px;
+}
