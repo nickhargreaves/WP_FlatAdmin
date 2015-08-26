@@ -92,3 +92,6 @@
     background: #1abc9c !important;
     color: #fff;
 }
+#adminmenu .wp-submenu {
+    left: 250px;
+}
