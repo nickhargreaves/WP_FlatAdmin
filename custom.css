@@ -92,6 +92,24 @@
     background: #1abc9c !important;
     color: #fff;
 }
-#adminmenu .wp-submenu {
+#adminmenu .wp-submenu{
     left: 250px;
+}
+
+.folded #adminmenu, .folded #adminmenu li.menu-top, .folded #adminmenuback, .folded #adminmenuwrap {
+    width: 56px;
+    height: 46px;
+}
+
+.folded #wpcontent, .folded #wpfooter {
+    margin-left: 56px;
+}
+.folded #adminmenu .folded .wp-submenu {
+    left: 250px;
+}
+#adminmenu .wp-submenu .wp-submenu-head {
+     margin: 0px;
+}
+.folded #adminmenu .opensub .wp-submenu, .folded #adminmenu .wp-has-current-submenu .wp-submenu.sub-open, .folded #adminmenu .wp-has-current-submenu a.menu-top:focus+.wp-submenu, .folded #adminmenu .wp-has-current-submenu.opensub .wp-submenu, .folded #adminmenu .wp-submenu.sub-open, .folded #adminmenu a.menu-top:focus+.wp-submenu, .no-js.folded #adminmenu .wp-has-submenu:hover .wp-submenu {
+    left: 56px;
 }
