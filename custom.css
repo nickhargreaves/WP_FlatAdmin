@@ -1,4 +1,9 @@
-#adminmenu, #adminmenu .wp-submenu, #adminmenuback, #adminmenuwrap {
+#adminmenuwrap {
+    background-color: #fff !important;
+    width: 250px;
+}
+
+#adminmenu, #adminmenu .wp-submenu, #adminmenuback {
     width: 250px;
     background-color: #2c3e50;
 }
