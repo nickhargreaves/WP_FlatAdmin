@@ -20,4 +20,4 @@ add_action('login_enqueue_scripts', 'flat_admin_theme_style');
 
 
 //login screen
-include_once(plugins_url('login.php'));
+include_once('login.php');

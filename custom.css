@@ -242,3 +242,9 @@ input[name="s"]
 
     color: #fff !important;
 }
+.custom_logo{
+    text-align: center;
+}
+.custom_logo img{
+    height: 120px;
+}
