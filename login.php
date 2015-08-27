@@ -1,53 +1,22 @@
 <?php
-function dlf_form() {
+function smallenvelop_login_message( $message ) {
+    return '<div class="login-form">
+            <div class="form-group">
+              <input type="text" class="form-control login-field" value="" placeholder="Enter your name" id="login-name">
+              <label class="login-field-icon fui-user" for="login-name"></label>
+            </div>
 
-?>
-
-<form method="post" action="<?php echo $_SERVER['REQUEST_URI']; ?>">
-    <div class="login-form">
-        <div class="form-group">
-            <input name="login_name" type="text" class="form-control login-field" value="" placeholder="Username" id="login-name" />
-            <label class="login-field-icon fui-user" for="login-name"></label>
-        </div>
-
-        <div class="form-group">
-            <input  name="login_password" type="password" class="form-control login-field" value="" placeholder="Password" id="login-pass" />
-            <label class="login-field-icon fui-lock" for="login-pass"></label>
-        </div>
-        <input class="btn btn-primary btn-lg btn-block" type="submit"  name="dlf_submit" value="Log in" />
-    </div>
-</form>
-
-<?php
-}
-function dlf_auth( $username, $password ) {
-global $user;
-$creds = array();
-$creds['user_login'] = $username;
-$creds['user_password'] =  $password;
-$creds['remember'] = true;
-$user = wp_signon( $creds, false );
-if ( is_wp_error($user) ) {
-echo $user->get_error_message();
-}
-if ( !is_wp_error($user) ) {
-wp_redirect(home_url('wp-admin'));
-}
+            <div class="form-group">
+              <input type="password" class="form-control login-field" value="" placeholder="Password" id="login-pass">
+              <label class="login-field-icon fui-lock" for="login-pass"></label>
+            </div>
+            <div class="form-group btn-primary btn-lg btn-block submit_login">
+                <a class="" href="#">Log in</a>
+            </div>
+            <a class="login-link" href="#">Lost your password?</a>
+          </div>';
 }
 
-function dlf_process() {
-if (isset($_POST['dlf_submit'])) {
-    dlf_auth($_POST['login_name'], $_POST['login_password']);
-}
+add_filter( 'login_message', 'smallenvelop_login_message' );
 
-dlf_form();
-}
-
-function dlf_shortcode() {
-ob_start();
-dlf_process();
-return ob_get_clean();
-}
-
-add_filter('login_message', 'dlf_form');
 ?>
