@@ -248,3 +248,6 @@ input[name="s"]
 .custom_logo img{
     height: 120px;
 }
+.login{
+    padding: 0px;
+}
