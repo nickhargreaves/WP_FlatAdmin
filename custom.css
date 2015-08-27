@@ -139,11 +139,10 @@
 /*
 input[type=checkbox], input[type=color], input[type=date], input[type=datetime-local], input[type=datetime], input[type=email], input[type=month], input[type=number], input[type=password], input[type=radio], input[type=search], input[type=tel], , input[type=time], input[type=url], input[type=week], select, */
 
-input[type=text], textarea{
+input[name="s"], input[type=text], textarea{
     display: block;
-    width: 100%;
-    min-height: 44px;
-    padding: 12px;
+    height: 34px;
+    padding: 6px;
     font-size: 14px;
     line-height: 1.42857143;
     color: #555;
@@ -156,4 +155,19 @@ input[type=text], textarea{
     -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
     -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
     transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+input[name="s"]
+{
+    margin-top: 5px !important;
+}
+
+.wp-admin select {
+    color: #fff;
+    background-color: #1abc9c;
+}
+.wp-admin select option{
+    padding: 10px;
+    line-height: 1.429;
+    color: #606d7a;
+    background-color: #dee4e8;
 }
