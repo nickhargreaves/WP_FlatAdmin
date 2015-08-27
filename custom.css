@@ -206,7 +206,22 @@ input[name="s"]
     background: #1abc9c; !important;
     margin:0px !important;
 }
-
+#loginform, #registerform{
+    position: relative;
+    padding: 24px 23px 20px;
+    background-color: #edeff1;
+    border-radius: 6px;
+}
+#nav a, #backtoblog a{
+    color: #fff !important;
+}
+.login label {
+    font-size: 0px;
+}
+.login .message {
+    color: #6f6f6f;
+}
+/*
 .login input[type=text]{
     height: 42px;
     padding: 3px;
@@ -232,12 +247,7 @@ input[name="s"]
 .submit_login {
     text-align: center;
 }
-#loginform{
-    display:none;
-}
-#login #nav{
-    display:none;
-}
+
 #backtoblog a{
 
     color: #fff !important;
@@ -251,3 +261,4 @@ input[name="s"]
 .login{
     padding: 0px;
 }
+*/
