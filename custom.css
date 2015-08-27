@@ -119,6 +119,21 @@
     border-color:transparent !important;
     border: 0px;
 }
+input[type=checkbox] {
+    border: none !important;
+    background-color: #dee4e8;
+    width: 16px !important;
+    height: 16px !important;
+}
+input[type=checkbox]:checked:before {
+    content: '\f147';
+    background-color: #48c9b0;
+    color: #fff;
+    border: none !important;
+    width: 20px !important;
+    height: 20px !important;
+    margin-top: -3px !important;
+}
 .show-settings{
     color: #fff !important;
 background-color:#2C3E50;
