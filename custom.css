@@ -113,11 +113,15 @@
 .folded #adminmenu .opensub .wp-submenu, .folded #adminmenu .wp-has-current-submenu .wp-submenu.sub-open, .folded #adminmenu .wp-has-current-submenu a.menu-top:focus+.wp-submenu, .folded #adminmenu .wp-has-current-submenu.opensub .wp-submenu, .folded #adminmenu .wp-submenu.sub-open, .folded #adminmenu a.menu-top:focus+.wp-submenu, .no-js.folded #adminmenu .wp-has-submenu:hover .wp-submenu {
     left: 56px;
 }
-.wp-core-ui .button, .show-settings{
+.wp-core-ui .button{
     color: #fff !important;
     background-color: #bdc3c7;
     border-color:transparent !important;
     border: 0px;
+}
+.show-settings{
+    color: #fff !important;
+background-color:#2C3E50;
 }
 .wp-core-ui .button-primary{
     color: #fff;
