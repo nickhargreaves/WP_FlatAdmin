@@ -171,3 +171,34 @@ input[name="s"]
     color: #606d7a;
     background-color: #dee4e8;
 }
+#wpadminbar{
+    background-color: #34495e;
+    min-height: 53px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    border-color: #080808;
+}
+.ab-item{
+    padding: 10px !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    color: #fff !important;
+}
+.ab-item:hover{
+    color: #1abc9c !important;
+}
+.ab-label:hover{
+    color: #1abc9c !important;
+}
+.ab-icon{
+    color: #1abc9c!important;
+}
+#adminmenuback {
+ position: relative !important;
+}
+.folded #adminmenuback{
+    position: relative !important;
+}
+#wpwrap{
+    padding-top: 20px;
+}
