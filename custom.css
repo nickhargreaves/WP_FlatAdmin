@@ -285,3 +285,22 @@ tfoot{
 thead{
     background-color: #ECF0F1;
 }
+
+/*
+    fix editor title
+*/
+label{
+    line-height: inherit !important;
+}
+#titlediv #title-prompt-text {
+    padding: 0px 6px;
+}
+/*
+    fix editor background
+*/
+#wp-content-editor-tools {
+     background-color: #fff;
+}
+.newtag {
+    margin-top: 5px !important;
+}
