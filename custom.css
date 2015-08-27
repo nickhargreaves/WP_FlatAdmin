@@ -202,3 +202,43 @@ input[name="s"]
 #wpwrap{
     padding-top: 20px;
 }
+.login{
+    background: #1abc9c; !important;
+    margin:0px !important;
+}
+
+.login input[type=text]{
+    height: 42px;
+    padding: 3px;
+    font-size: 17px;
+    background-color: #fff;
+}
+.login-form .login-field {
+    font-size: 17px;
+    text-indent: 3px;
+    border: none;
+    width: 100%;
+    padding: 3px;
+}
+#login {
+    width: 360px;
+}
+#login .btn{
+    height: 30px;
+}
+.submit_login a{
+    color: #fff !important;
+}
+.submit_login {
+    text-align: center;
+}
+#loginform{
+    display:none;
+}
+#login #nav{
+    display:none;
+}
+#backtoblog a{
+
+    color: #fff !important;
+}
