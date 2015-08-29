@@ -304,3 +304,6 @@ label{
 .newtag {
     margin-top: 5px !important;
 }
+#login_error, .login .message {
+    color: #000;
+}
