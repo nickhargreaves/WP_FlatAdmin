@@ -307,3 +307,15 @@ label{
 #login_error, .login .message {
     color: #000;
 }
+.widget-liquid-left h3 {
+    font-size: 1em;
+}
+.widget-liquid-left h4 {
+    font-size: 1em;
+}
+.widget-liquid-right h3 {
+    font-size: 1em;
+}
+.widget-liquid-right h4 {
+    font-size: 1em;
+}
