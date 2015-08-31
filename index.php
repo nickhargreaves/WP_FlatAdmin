@@ -13,6 +13,7 @@
 function flat_admin_theme_style() {
     wp_enqueue_style('flat-admin-theme', plugins_url('Flat-UI/dist/css/flat-ui.css', __FILE__));
     wp_enqueue_style('flat-admin-theme2', plugins_url('assets/css/custom.css', __FILE__));
+    wp_enqueue_style('flat-admin-theme3', plugins_url('assets/css/bootstrap.min.css', __FILE__));
 }
 add_action('admin_enqueue_scripts', 'flat_admin_theme_style');
 add_action('login_enqueue_scripts', 'flat_admin_theme_style');
