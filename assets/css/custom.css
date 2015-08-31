@@ -138,6 +138,10 @@ input[type=checkbox]:checked:before {
     color: #fff !important;
 background-color:#2C3E50;
 }
+#contextual-help-link-wrap, #screen-options-link-wrap {
+    color: #fff !important;
+    background-color:#2C3E50;
+}
 .wp-core-ui .button-primary{
     color: #fff;
     background-color: #48c9b0;
