@@ -14,23 +14,6 @@ $data_field_name = 'wp_flat_admin_custom_logo_path';
 // Read in existing option value from database
 $opt_val = get_option( $opt_name );
 
-// See if the user has posted us some information
-// If they did, this hidden field will be set to 'Y'
-if( isset($_POST[ $hidden_field_name ]) && $_POST[ $hidden_field_name ] == 'Y' ) {
-// Read their posted value
-    $opt_val = $_POST[ $data_field_name ];
-
-// Save the posted value in the database
-    update_option( $opt_name, $opt_val );
-
-// Put a "settings saved" message on the screen
-
-    ?>
-    <div class="updated"><p><strong><?php _e('settings saved.', 'menu-test' ); ?></strong></p></div>
-    <?php
-
-}
-
 // Now display the settings editing screen
 
 echo '<div class="wrap">';
@@ -50,18 +33,28 @@ echo "<h3>" . __( 'WP Flat Admin Settings', 'menu-test' ) . "</h3>";
 ?>
 <label for="upload_image">
     <input type="hidden" name="<?php echo $hidden_field_name; ?>" value="Y">
+    <input type="hidden" id="save_url" value="<?php echo plugin_dir_url( __FILE__ ) .'save_url.php'?>">
     <input id="upload_image" type="text" name="<?php echo $data_field_name; ?>"  value="<?php echo $opt_val; ?>" class="form-control"/>
     <input id="upload_image_button" class="button" type="button" value="Upload Image" />
-    <br />Enter a URL or upload an image
 </label>
 
-<div id="show_image"></div>
+<div id="show_image">
+
+    <?php
+        if(!empty($opt_val)){
+            print "<img src='" .$opt_val. "' width='150px'>";
+        }
+    ?>
+
+</div>
 
 <?php
+
 if (isset($_GET['page']) && $_GET['page'] == 'wpflatadmin') {
     wp_enqueue_media();
     wp_enqueue_script('logo-uploader-js', plugin_dir_url( __FILE__ ) .'../assets/js/logo-uploader.js', array('jquery'));
 }
+
 ?>
 
 </div>
