@@ -19,6 +19,6 @@ function wp_flat_admin_config_options() {
         wp_die( __( 'You do not have sufficient permissions to access this page.' ) );
     }
 
-    //include_once("config_options.php");
+    include_once("config_options.php");
 
 }
