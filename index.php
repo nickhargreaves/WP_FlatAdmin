@@ -1,9 +1,9 @@
 <?php
 /**
-* Plugin Name: WP Flat Admin
-* Plugin URI: http://github.com/nickhargreaves/flat_ui_wp_admin
-* Description: This plugin turns a Wordpress Admin backend into a nice looking dashboard based on the Flat UI kit by http://designmodo.com/flat
-* Version: 1.0.0
+* Plugin Name: WP Flat Admin Theme
+* Plugin URI: https://github.com/nickhargreaves/WP_FlatAdmin
+* Description: This plugin turns a Wordpress Admin theme into a nice looking dashboard based on the Flat UI kit by http://designmodo.com/flat
+* Version: 1.0.1
 * Author: Nick Hargreaves
 * Author URI: http://nickhargreaves.com
 * License: GPL2
@@ -21,4 +21,5 @@ add_action('login_enqueue_scripts', 'flat_admin_theme_style');
 
 
 //login screen
-include_once('inc/login.php');
+include_once('login/login.php');
+include_once('login/add_menu.php');
