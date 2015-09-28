@@ -20,7 +20,7 @@ echo '<div class="wrap">';
 
 // header
 
-echo "<h3>" . __( 'WP Flat Admin Settings', 'menu-test' ) . "</h3>";
+echo "<h4>" . __( 'WP Flat Admin Settings', 'menu-test' ) . "</h4>";
 
 // settings form
 
@@ -35,9 +35,8 @@ echo "<h3>" . __( 'WP Flat Admin Settings', 'menu-test' ) . "</h3>";
     <input type="hidden" name="<?php echo $hidden_field_name; ?>" value="Y">
     <input type="hidden" id="save_url" value="<?php echo plugin_dir_url( __FILE__ ) .'save_url.php'?>">
     <input id="upload_image" type="text" name="<?php echo $data_field_name; ?>"  value="<?php echo $opt_val; ?>" class="form-control"/>
-    <input id="upload_image_button" class="button" type="button" value="Upload Image" />
+    <input id="upload_image_button" class="button" type="button" value="Upload Custom Logo" />
 </label>
-
 <div id="show_image">
 
     <?php

@@ -29,9 +29,7 @@ jQuery(document).ready(function($){
             $('#show_image').html("<img src='" + attachment.url + "' width='150px'>");
 
             var save_url = $('#save_url').val();
-
-            alert(save_url);
-
+            
             //ajax request to save option
             //reload messages
             jQuery.post(save_url,{
