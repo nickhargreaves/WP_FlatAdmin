@@ -323,3 +323,24 @@ label{
 .widget-liquid-right h4 {
     font-size: 1em;
 }
+/**
+    Upload custom login logo
+*/
+#show_image{
+    padding: 20px;
+    width:300px;
+    text-align: center;
+}
+input[name="s"], input[type=text], textarea{
+    max-width: 400px !important;
+    display: inline !important;
+
+}
+#show_image img{
+    height: 200px;
+    border: 2px solid #d4d4d4;
+}
+
+#manage-login-logo .button {
+    height: 34px;
+}

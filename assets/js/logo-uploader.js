@@ -26,18 +26,7 @@ jQuery(document).ready(function($){
             console.log(custom_uploader.state().get('selection').toJSON());
             attachment = custom_uploader.state().get('selection').first().toJSON();
             $('#upload_image').val(attachment.url);
-            $('#show_image').html("<img src='" + attachment.url + "' width='150px'>");
-
-            var save_url = $('#save_url').val();
-            
-            //ajax request to save option
-            //reload messages
-            jQuery.post(save_url,{
-                    url: attachment.url,
-                })
-                .done(function( data ) {
-                    //jQuery("#saved_url").html(data);
-                });
+            $('#show_image').html("<img src='" + attachment.url + "'>");
         });
 
         //Open the uploader dialog

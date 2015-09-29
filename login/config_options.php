@@ -11,12 +11,21 @@ $opt_name = 'wp_flat_admin_custom_logo_path';
 $hidden_field_name = 'wp_flat_admin_submit_hidden';
 $data_field_name = 'wp_flat_admin_custom_logo_path';
 
+//check for post
+if(isset($_POST[$data_field_name])){
+    $opt_val = $_POST[ $data_field_name ];
+
+    //Save the posted value in the database
+    update_option( 'wp_flat_admin_custom_logo_path', $opt_val );
+}
+
 // Read in existing option value from database
 $opt_val = get_option( $opt_name );
 
+
 // Now display the settings editing screen
 
-echo '<div class="wrap">';
+echo '<div class="wrap" id="manage-login-logo">';
 
 // header
 
@@ -31,17 +40,23 @@ echo "<h4>" . __( 'WP Flat Admin Settings', 'menu-test' ) . "</h4>";
 <?php
    // wp_enqueue_media();
 ?>
+
+Upload image or add url:
+<br />
 <label for="upload_image">
-    <input type="hidden" name="<?php echo $hidden_field_name; ?>" value="Y">
-    <input type="hidden" id="save_url" value="<?php echo plugin_dir_url( __FILE__ ) .'save_url.php'?>">
+
+    <form action="" method="post" id="submit_picture">
     <input id="upload_image" type="text" name="<?php echo $data_field_name; ?>"  value="<?php echo $opt_val; ?>" class="form-control"/>
     <input id="upload_image_button" class="button" type="button" value="Upload Custom Logo" />
+    <input type="hidden" name="<?php echo $hidden_field_name; ?>" value="Y">
+    <input type="submit" id="save_image" class="button button-primary" value="save"></form>
+
 </label>
 <div id="show_image">
 
     <?php
         if(!empty($opt_val)){
-            print "<img src='" .$opt_val. "' width='150px'>";
+            print "<img src='" .$opt_val. "'>";
         }
     ?>
 
